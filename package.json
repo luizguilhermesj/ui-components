@@ -1,5 +1,20 @@
 {
   "name": "ui-components",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "scripts": {
+    "build-react": "./node_modules/.bin/babel src/react --out-dir dist/react --presets @babel/preset-env,@babel/preset-react",
+    "build-styled": "./node_modules/.bin/babel src/styled --out-dir dist/styled --presets @babel/preset-env",
+    "build-vue": "./node_modules/.bin/babel src/vue --out-dir dist/vue --presets @babel/preset-env",
+    "build": "yarn build-react && yarn build-styled && yarn build-vue"
+  },
+  "dependencies": {
+    "styled-components": "^3.4.9"
+  }
 }

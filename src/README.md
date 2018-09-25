@@ -4,7 +4,6 @@
 ## Local Setup
 ```
 yarn install
-yarn build
 yarn link
 ```
 
