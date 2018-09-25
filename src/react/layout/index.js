@@ -1,5 +1,5 @@
-import grid from './grid';
+import Grid from './grid';
 
-export default {
-    grid
+export {
+    Grid
 };

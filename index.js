@@ -1,9 +1,13 @@
-import styledComponents from './dist/styled';
-import reactComponents from './dist/react';
-import vueComponents from './dist/vue';
+const styledComponents = require('./dist/styled');
+const reactComponents = require('./dist/react');
+const vueComponents = require('./dist/vue');
 
-export default {
-    styledComponents,
-    reactComponents,
-    vueComponents
+exports.default = {
+    styledComponents : styledComponents,
+    reactComponents : reactComponents,
+    vueComponents : vueComponents
 };
+
+exports.styledComponents = styledComponents;
+exports.reactComponents = reactComponents;
+exports.vueComponents = vueComponents;

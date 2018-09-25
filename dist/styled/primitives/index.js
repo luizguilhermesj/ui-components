@@ -5,17 +5,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _colours = _interopRequireDefault(require("./colours.js"));
+var colours = _interopRequireWildcard(require("./colours.js"));
 
-var _spacing = _interopRequireDefault(require("./spacing.js"));
+var spacing = _interopRequireWildcard(require("./spacing.js"));
 
-var _typography = _interopRequireDefault(require("./typography.js"));
+var typography = _interopRequireWildcard(require("./typography.js"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 var _default = {
-  colours: _colours.default,
-  spacing: _spacing.default,
-  typography: _typography.default
+  colours: colours,
+  spacing: spacing,
+  typography: typography
 };
 exports.default = _default;

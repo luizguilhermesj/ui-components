@@ -1,10 +1,10 @@
-import foundation from './foundation';
-import layout from './layout';
-import dataEntry from './dataEntry';
-import dataDisplay from './dataDisplay';
-import feedback from './feedback';
+import * as foundation from './foundation';
+import * as layout from './layout';
+import * as dataEntry from './dataEntry';
+import * as dataDisplay from './dataDisplay';
+import * as feedback from './feedback';
 
-export default {
+export {
     foundation,
     layout,
     dataEntry,

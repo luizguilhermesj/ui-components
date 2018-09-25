@@ -3,25 +3,26 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.feedback = exports.dataDisplay = exports.dataEntry = exports.layout = exports.foundation = void 0;
 
-var _foundation = _interopRequireDefault(require("./foundation"));
+var foundation = _interopRequireWildcard(require("./foundation"));
 
-var _layout = _interopRequireDefault(require("./layout"));
+exports.foundation = foundation;
 
-var _dataEntry = _interopRequireDefault(require("./dataEntry"));
+var layout = _interopRequireWildcard(require("./layout"));
 
-var _dataDisplay = _interopRequireDefault(require("./dataDisplay"));
+exports.layout = layout;
 
-var _feedback = _interopRequireDefault(require("./feedback"));
+var dataEntry = _interopRequireWildcard(require("./dataEntry"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+exports.dataEntry = dataEntry;
 
-var _default = {
-  foundation: _foundation.default,
-  layout: _layout.default,
-  dataEntry: _dataEntry.default,
-  dataDisplay: _dataDisplay.default,
-  feedback: _feedback.default
-};
-exports.default = _default;
+var dataDisplay = _interopRequireWildcard(require("./dataDisplay"));
+
+exports.dataDisplay = dataDisplay;
+
+var feedback = _interopRequireWildcard(require("./feedback"));
+
+exports.feedback = feedback;
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }

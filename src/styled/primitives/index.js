@@ -1,6 +1,6 @@
-import colours from './colours.js';
-import spacing from './spacing.js';
-import typography from './typography.js';
+import * as colours from './colours.js';
+import * as spacing from './spacing.js';
+import * as typography from './typography.js';
 
 export default {
     colours,

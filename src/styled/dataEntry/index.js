@@ -1,5 +1,5 @@
-import Switch from './switch';
+import * as Switch from './switch';
 
-export default {
+export {
     Switch
 };
