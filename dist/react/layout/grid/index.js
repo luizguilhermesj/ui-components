@@ -41,7 +41,11 @@ function (_React$Component) {
   _createClass(Grid, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null);
+      return _react.default.createElement("div", {
+        style: {
+          border: "1px solid black"
+        }
+      }, this.props.children);
     }
   }]);
 

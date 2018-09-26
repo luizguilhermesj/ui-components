@@ -1,5 +1,10 @@
 import Grid from './grid';
 
-export {
+const items = {
     Grid
 };
+
+export {
+    items as default,
+    ...items
+}
