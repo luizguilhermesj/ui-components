@@ -8,10 +8,20 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-syntax-export-default-from": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-react": "^7.0.0",
+    "babel-7-jest": "^21.3.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0"
   },
   "scripts": {
-    "build": "babel src --out-dir dist --config-file ./babel.config.js"
+    "build-react": "babel src/react --out-dir dist/react --config-file ./babel.config.js",
+    "build-styled": "babel src/styled --out-dir dist/styled --presets @babel/preset-env --plugins @babel/plugin-proposal-object-rest-spread",
+    "build-vue": "babel src/vue --out-dir dist/vue --presets @babel/preset-env --plugins @babel/plugin-proposal-object-rest-spread",
+    "build-old": "yarn build-react && yarn build-styled && yarn build-vue",
+    "build": "babel src --out-dir dist --config-file ./babel.config.js",
+    "test": "jest --config jest.config.js"
   },
   "dependencies": {
     "react": "^16.5.2",
