@@ -6,16 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "Grid", {
   enumerable: true,
   get: function get() {
-    return _grid.default;
-  }
-});
-Object.defineProperty(exports, "Test", {
-  enumerable: true,
-  get: function get() {
-    return _grid.default;
+    return _grid.Grid;
   }
 });
 
-var _grid = _interopRequireDefault(require("./grid"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _grid = require("./grid");

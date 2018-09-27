@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Grid extends React.Component {
+export class Grid extends React.Component {
     render() {
         return (
             <div>
@@ -9,5 +9,3 @@ class Grid extends React.Component {
         );
     }
 }
-
-export default Grid;

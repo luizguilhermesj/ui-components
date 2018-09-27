@@ -1,9 +1,3 @@
-import * as colours from './colours.js';
-import * as spacing from './spacing.js';
-import * as typography from './typography.js';
-
-export default {
-    colours,
-    spacing,
-    typography
-};
+export * as colours     from './colours.js';
+export * as spacing     from './spacing.js';
+export * as typography  from './typography.js';

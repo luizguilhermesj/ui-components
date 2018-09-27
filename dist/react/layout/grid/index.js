@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.Grid = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -41,12 +41,11 @@ function (_React$Component) {
   _createClass(Grid, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null);
+      return _react.default.createElement("div", null, this.props.children);
     }
   }]);
 
   return Grid;
 }(_react.default.Component);
 
-var _default = Grid;
-exports.default = _default;
+exports.Grid = Grid;

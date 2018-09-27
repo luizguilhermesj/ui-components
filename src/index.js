@@ -1,9 +1,3 @@
-import styledComponents from './styled';
-import reactComponents  from './react';
-import vueComponents    from './vue';
-
-export default {
-    styledComponents,
-    reactComponents,
-    vueComponents
-};
+export * as styledComponents from './styled';
+export * as reactComponents from './react';
+export * as vueComponents from './vue';

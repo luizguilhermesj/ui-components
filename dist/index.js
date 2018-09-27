@@ -3,19 +3,18 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.vueComponents = exports.reactComponents = exports.styledComponents = void 0;
 
-var _styled = _interopRequireDefault(require("./styled"));
+var _styledComponents = _interopRequireWildcard(require("./styled"));
 
-var _react = _interopRequireDefault(require("./react"));
+exports.styledComponents = _styledComponents;
 
-var _vue = _interopRequireDefault(require("./vue"));
+var _reactComponents = _interopRequireWildcard(require("./react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+exports.reactComponents = _reactComponents;
 
-var _default = {
-  styledComponents: _styled.default,
-  reactComponents: _react.default,
-  vueComponents: _vue.default
-};
-exports.default = _default;
+var _vueComponents = _interopRequireWildcard(require("./vue"));
+
+exports.vueComponents = _vueComponents;
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
