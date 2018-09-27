@@ -8,6 +8,6 @@ module.exports = {
         "@babel/plugin-syntax-export-default-from"
     ],
     "ignore": [
-        "*.test.js"
+        "**/*.test.js"
     ]
 };
