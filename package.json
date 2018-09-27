@@ -13,10 +13,6 @@
     "@babel/preset-stage-3": "^7.0.0"
   },
   "scripts": {
-    "build-react": "babel src/react --out-dir dist/react --config-file ./babel.config.js",
-    "build-styled": "babel src/styled --out-dir dist/styled --presets @babel/preset-env --plugins @babel/plugin-proposal-object-rest-spread",
-    "build-vue": "babel src/vue --out-dir dist/vue --presets @babel/preset-env --plugins @babel/plugin-proposal-object-rest-spread",
-    "build-old": "yarn build-react && yarn build-styled && yarn build-vue",
     "build": "babel src --out-dir dist --config-file ./babel.config.js"
   },
   "dependencies": {
