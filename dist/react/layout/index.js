@@ -9,6 +9,12 @@ Object.defineProperty(exports, "Grid", {
     return _grid.default;
   }
 });
+Object.defineProperty(exports, "Test", {
+  enumerable: true,
+  get: function get() {
+    return _grid.default;
+  }
+});
 
 var _grid = _interopRequireDefault(require("./grid"));
 

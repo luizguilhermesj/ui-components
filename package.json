@@ -5,16 +5,23 @@
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-export-default-from": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-3": "^7.0.0"
   },
   "scripts": {
-    "build-react": "./node_modules/.bin/babel src/react --out-dir dist/react --presets @babel/preset-env,@babel/preset-react",
-    "build-styled": "./node_modules/.bin/babel src/styled --out-dir dist/styled --presets @babel/preset-env",
-    "build-vue": "./node_modules/.bin/babel src/vue --out-dir dist/vue --presets @babel/preset-env",
-    "build": "yarn build-react && yarn build-styled && yarn build-vue"
+    "build-react": "babel src/react --out-dir dist/react --config-file ./babel.config.js",
+    "build-styled": "babel src/styled --out-dir dist/styled --presets @babel/preset-env --plugins @babel/plugin-proposal-object-rest-spread",
+    "build-vue": "babel src/vue --out-dir dist/vue --presets @babel/preset-env --plugins @babel/plugin-proposal-object-rest-spread",
+    "build-old": "yarn build-react && yarn build-styled && yarn build-vue",
+    "build": "babel src --out-dir dist --config-file ./babel.config.js"
   },
   "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "styled-components": "^3.4.9"
   }
 }
